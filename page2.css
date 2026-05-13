@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("background_RI.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* removed background-attachment: fixed */
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: darkblue;
+  font-family: 'Arial', sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 80px;
+}
+
+h1:hover {
+  color: white;
+  transition: color 0.3s;
+}
+
+.img-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 40px;
+}
+
+.img-wang {
+  width: 32%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-ri {
+  width: 32%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-limuwan {
+  width: 32%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-container img {
+  transition: transform 0.3s;
+}
+
+.img-container img:hover {
+  transform: scale(1.05);
+}
+
+.btn-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.btn {
+  transition: all 0.3s;
+  font-size: 60px;
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:visited {
+  color: white;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px white;
+  transform: scale(1.1);
+}
